@@ -10,6 +10,59 @@
   <title>Frontend Mentor | Password generator app</title>
 </head>
 <body>
-
+  <div class="main-div">
+    <h1>Password Generator</h1>
+    <div class="generated-div">
+      <p class="generated-password">P4$5W0rD!</p>
+      <div class="copy-div">
+        <p class="copied-txt">COPIED</p>
+        <img src="images/icon-copy.svg" alt="copy icon" class="copy-icon">
+      </div>
+    </div>
+    <div class="options-div">
+      <div class="character-length-div">
+        <p class="character-length-txt">Character Length</p>
+        <p class="character-length">0</p>
+      </div>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="20" value="0" class="slider">
+      </div>
+      <div class="checkbox-container">
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Include Uppercase Letters
+        </label>
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Include Lowercase Letters
+        </label>
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Include Numbers
+        </label>
+        <label class="container">
+          <input type="checkbox">
+          <span class="checkmark"></span>
+          Include Symbols
+        </label>
+      </div>
+      <div class="strength-div">
+        <p class="strength-txt">STRENGTH</p>
+        <div class="strength-size-div">
+          <p class="strength-size-txt">Medium</p>
+          <div class="strength-measure">
+            <div class="strength" id="strong1"></div>
+            <div class="strength" id="strong2"></div>
+            <div class="strength" id="strong3"></div>
+            <div class="strength" id="strong4"></div>
+          </div>
+        </div>
+      </div>
+      <button>Generate</button>
+    </div>
+  </div>
 </body>
 </html>
