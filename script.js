@@ -15,8 +15,11 @@ const strengthSizeText = document.querySelector(".strength-size-txt");
 const button = document.getElementById("btn");
 
 copyIcon.addEventListener("click", () => {
+  /*copying generated password and displays text copied*/
+  let copyedText = generatedPassword.innerHTML;
   if (generatedPassword.style.color !== "rgba(230, 229, 234, 0.247)") {
     copyText.style.display = "block";
+    navigator.clipboard.writeText(copyedText)
   }
 });
 
